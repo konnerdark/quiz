@@ -1246,54 +1246,6 @@ Te amo hoje, amanhã e sempre.`;
 
 const assinaturaCarta = "Com amor ❤️";
 
-// 1. Defina o array de músicas primeiro (ou em outro lugar do código)
-const musicas = [
-  {
-    artista: "Big Rush",
-    foto: "https://i.scdn.co/image/ab67616d00001e02153a4efba304c7d1f706d20b",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/FicaComigoEssaNoite.mp3"
-  },
-  { 
-    artista: "Billie Eilish", 
-    foto: "https://topview.com.br/wp-content/uploads/2021/05/Billie-Eilish-Happier-Than-Ever.jpeg",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/BirdsOfAFeather.mp3"
-  },
-  { 
-    artista: "Cigarettes After Sex", 
-    foto: "https://upload.wikimedia.org/wikipedia/commons/d/d5/POS17_%40Kristsll-198_%2835166606654%29.jpg",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/Sweet.mp3"
-  },
-  { 
-    artista: "BrazzaOg", 
-    foto: "https://i.scdn.co/image/ab6761610000e5ebd3e3fc6357fd04248cd6004c",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/Liverpool.mp3"
-  },
-  { 
-    artista: "Olivia Rodrigo", 
-    foto: "https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2025/05/Olivia-Rodrigo_1746142940541.jpg",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/DropDead.mp3"
-  },
-  { 
-    artista: "Kawe", 
-    foto: "https://conteudo.imguol.com.br/c/splash/1a/2021/01/27/kawe-trapper-que-chegou-no-primeiro-lugar-do-top-50-do-spotify-1611781104149_v2_600x600.jpg",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/Rubi.mp3"
-  },
-  { 
-    artista: "Suki Waterhouse", 
-    foto: "https://m.media-amazon.com/images/M/MV5BMzIzMTFlZGUtMmNlYy00YWY3LTkyNGUtNzAxMGFmYmMwOGE0XkEyXkFqcGc@._V1_.jpg",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/GoodLooking.mp3"
-  },
-  { 
-    artista: "Yago Oproprio", 
-    foto: "https://hitsperdidos.com/wp-content/uploads/2024/05/Yago-Oproprio-2024-Lanca-album-de-estreia.webp",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/Imprevisto.mp3.mp3"
-  },
-  { 
-    artista: "Rashid", 
-    foto: "https://akamai.sscdn.co/uploadfile/letras/fotos/4/8/8/b/488bae899ea6059e2698c2251494186e.jpg",
-    audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/Vicio.mp3"
-  }
-];
 /* Perguntas de múltipla escolha — edite à vontade! */
 const perguntas = [
   {
@@ -1385,9 +1337,55 @@ const perguntas = [
   pergunta: "Qual música você acha mais nossa vibe?",
   opcoes: ["Fica Comigo Essa Noite", "Birds of a Feather", "Sweet", "Liverpool", "Drop Dead", "Rubi", "Good Looking", "Imprevisto", "Vicio"],
   correta: -1,
-  audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/FicaComigoEssaNoite.mp3",
+  musicas: [
+  { 
+    artista: "Big Rush", 
+    foto: "https://i.scdn.co/image/ab67616d00001e02153a4efba304c7d1f706d20b",
+    audio: "5qzIzAIrIHVGINRSIOFlD7.mp3"
+  },
+  { 
+    artista: "Billie Eilish", 
+    foto: "https://topview.com.br/wp-content/uploads/2021/05/Billie-Eilish-Happier-Than-Ever.jpeg",
+    audio: "URL_DO_SEU_AUDIO_AQUI_2.mp3"
+  },
+  { 
+    artista: "Cigarettes After Sex", 
+    foto: "https://upload.wikimedia.org/wikipedia/commons/d/d5/POS17_%40Kristsll-198_%2835166606654%29.jpg",
+    audio: "URL_DO_SEU_AUDIO_AQUI_3.mp3"
+  },
+  { 
+    artista: "BrazzaOg", 
+    foto: "https://i.scdn.co/image/ab6761610000e5ebd3e3fc6357fd04248cd6004c",
+    audio: "URL_DO_SEU_AUDIO_AQUI_4.mp3"
+  },
+  { 
+    artista: "Olivia Rodrigo", 
+    foto: "https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2025/05/Olivia-Rodrigo_1746142940541.jpg",
+    audio: "URL_DO_SEU_AUDIO_AQUI_5.mp3"
+  },
+  { 
+    artista: "Kawe", 
+    foto: "https://conteudo.imguol.com.br/c/splash/1a/2021/01/27/kawe-trapper-que-chegou-no-primeiro-lugar-do-top-50-do-spotify-1611781104149_v2_600x600.jpg",
+    audio: "URL_DO_SEU_AUDIO_AQUI_6.mp3"
+  },
+  { 
+    artista: "Suki Waterhouse", 
+    foto: "https://m.media-amazon.com/images/M/MV5BMzIzMTFlZGUtMmNlYy00YWY3LTkyNGUtNzAxMGFmYmMwOGE0XkEyXkFqcGc@._V1_.jpg",
+    audio: "URL_DO_SEU_AUDIO_AQUI_7.mp3"
+  },
+  { 
+    artista: "Yago Oproprio", 
+    foto: "https://hitsperdidos.com/wp-content/uploads/2024/05/Yago-Oproprio-2024-Lanca-album-de-estreia.webp",
+    audio: "URL_DO_SEU_AUDIO_AQUI_8.mp3"
+  },
+  { 
+    artista: "Rashid", 
+    foto: "https://akamai.sscdn.co/uploadfile/letras/fotos/4/8/8/b/488bae899ea6059e2698c2251494186e.jpg",
+    audio: "URL_DO_SEU_AUDIO_AQUI_9.mp3"
+  }
+],
   feedbacks: [
-    "Fica Comigo Essa Noite 🌙 kone", "Birds of a Feather 🐦 Boa escolha!", "Sweet 🍬 Gosto!",
+    "Fica Comigo Essa Noite 🌙 Que vibe!", "Birds of a Feather 🐦 Boa escolha!", "Sweet 🍬 Gosto!",
     "Liverpool 🎶 Que clima!", "Drop Dead 🖤 Intenso!", "Rubi 💎 Que vibe!",
     "Good Looking ✨ Boa escolha!", "Imprevisto 🌊 Que sentimento!", "Vicio 🔥 Intenso!"
   ]
@@ -1476,11 +1474,11 @@ function renderQuestion() {
       
       // Adicionamos o botão de prévia corretamente dentro da template string
       btn.innerHTML = `
-  <img class="disc" src="${m.foto}" alt="${m.artista}" onerror="this.style.background='#3a0020';this.src=''"/>
-  <span class="opt-letter">${letters[i]}</span>
-  <span class="disc-label">${opt}<br><small style="color:var(--clr-muted)">${m.artista}</small></span>
-  <button type="button" class="btn-previa" onclick="event.stopPropagation(); abrirPrevia('${m.audio}', '${m.foto}');">🎧 Ouvir Prévia</button>
-`;
+        <img class="disc" src="${m.foto}" alt="${m.artista}" onerror="this.style.background='#3a0020';this.src=''"/>
+        <span class="opt-letter">${letters[i]}</span>
+        <span class="disc-label">${opt}<br><small style="color:var(--clr-muted)">${m.artista}</small></span>
+        <button type="button" class="btn-previa" onclick="event.stopPropagation(); abrirPrevia('${m.audio}', '${m.foto}');">🎧 Ouvir Prévia</button>
+      `;
       
       btn.onclick = () => selectOption(i);
       container.appendChild(btn);
