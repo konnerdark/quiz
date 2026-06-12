@@ -1246,7 +1246,8 @@ Te amo hoje, amanhã e sempre.`;
 
 const assinaturaCarta = "Com amor ❤️";
 
-  const musicas = [
+// 1. Defina o array de músicas primeiro (ou em outro lugar do código)
+const musicas = [
   {
     artista: "Big Rush",
     foto: "https://i.scdn.co/image/ab67616d00001e02153a4efba304c7d1f706d20b",
@@ -1293,7 +1294,6 @@ const assinaturaCarta = "Com amor ❤️";
     audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/Vicio.mp3"
   }
 ];
-
 /* Perguntas de múltipla escolha — edite à vontade! */
 const perguntas = [
   {
@@ -1384,10 +1384,10 @@ const perguntas = [
   {
   pergunta: "Qual música você acha mais nossa vibe?",
   opcoes: ["Fica Comigo Essa Noite", "Birds of a Feather", "Sweet", "Liverpool", "Drop Dead", "Rubi", "Good Looking", "Imprevisto", "Vicio"],
-  correta: -1
-},
+  correta: -1,
+  audio: "https://github.com/konnerdark/quiz/raw/refs/heads/main/FicaComigoEssaNoite.mp3",
   feedbacks: [
-    "Fica Comigo Essa Noite 🌙 Que vibe!", "Birds of a Feather 🐦 Boa escolha!", "Sweet 🍬 Gosto!",
+    "Fica Comigo Essa Noite 🌙 kone", "Birds of a Feather 🐦 Boa escolha!", "Sweet 🍬 Gosto!",
     "Liverpool 🎶 Que clima!", "Drop Dead 🖤 Intenso!", "Rubi 💎 Que vibe!",
     "Good Looking ✨ Boa escolha!", "Imprevisto 🌊 Que sentimento!", "Vicio 🔥 Intenso!"
   ]
@@ -1476,11 +1476,11 @@ function renderQuestion() {
       
       // Adicionamos o botão de prévia corretamente dentro da template string
       btn.innerHTML = `
-        <img class="disc" src="${m.foto}" alt="${m.artista}" onerror="this.style.background='#3a0020';this.src=''"/>
-        <span class="opt-letter">${letters[i]}</span>
-        <span class="disc-label">${opt}<br><small style="color:var(--clr-muted)">${m.artista}</small></span>
-        <button type="button" class="btn-previa" onclick="event.stopPropagation(); abrirPrevia('${m.audio}', '${m.foto}');">🎧 Ouvir Prévia</button>
-      `;
+  <img class="disc" src="${m.foto}" alt="${m.artista}" onerror="this.style.background='#3a0020';this.src=''"/>
+  <span class="opt-letter">${letters[i]}</span>
+  <span class="disc-label">${opt}<br><small style="color:var(--clr-muted)">${m.artista}</small></span>
+  <button type="button" class="btn-previa" onclick="event.stopPropagation(); abrirPrevia('${m.audio}', '${m.foto}');">🎧 Ouvir Prévia</button>
+`;
       
       btn.onclick = () => selectOption(i);
       container.appendChild(btn);
